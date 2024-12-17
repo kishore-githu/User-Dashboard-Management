@@ -1,0 +1,123 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+/* Container styling */
+div {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Add User button animation */
+button {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #3f51b5;
+  color: white;
+}
+
+/* Table container with fade-in animation */
+.MuiPaper-root {
+  animation: slideIn 0.5s ease-out;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* Table styles */
+.MuiTable-root {
+  min-width: 650px;
+}
+
+.MuiTableHead-root {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.MuiTableCell-root {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.MuiTablePagination-root {
+  background-color: #f4f6f9;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Row hover animation */
+.MuiTableRow-root:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Dialog animation for sliding in */
+.MuiDialog-root {
+  animation: slideFromTop 0.3s ease-out;
+}
+
+/* Form styles */
+.MuiTextField-root {
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Error styling for invalid inputs */
+.Mui-error {
+  color: red;
+}
+
+/* Animation for modal opening */
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Custom styling for Rows per page dropdown */
+.MuiTablePagination-select {
+  background-color: #3f51b5; /* Background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.MuiTablePagination-select:hover {
+  background-color: #303f9f; /* Darker shade on hover */
+}
+
+.MuiTablePagination-selectIcon {
+  color: white; /* Arrow color */
+}
